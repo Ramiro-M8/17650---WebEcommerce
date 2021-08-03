@@ -30,9 +30,6 @@
                 </form>
             </div>
             
-            <!--Menu Desplegable, tengo que arreglar la posicion en la que se muestra-->
-            <button class="headerPrincipal__desplegable col-12" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><i class="fas fa-bars fa-2x"></i></button>
-
             <!--Login, Registro y Carrito-->
             <div class="headerPrincipal__botonesMenu">
                 <ul>
@@ -45,7 +42,9 @@
         </div>
 
         <!--Menu-->
-        <div class="containerMenu collapse" id="collapseExample">
+        <div class="containerMenu">
+            <label for="toggle" id="hamburguesa">&#9776</label>
+            <input type="checkbox" id="toggle">
             <nav class="menu">
                 
                 <ul>
@@ -54,6 +53,11 @@
                     <li><a href="metodosdepago.html">Metodos de Pago</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
                     <li><a href="ayuda.html">Ayuda</a></li>
+                </ul>
+                <ul class="menuMobile">
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Registrarse</a></li> 
+                    <li><a href="#">Carrito</a></li>
                 </ul>
             </nav>
             
