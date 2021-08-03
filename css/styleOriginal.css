@@ -8,9 +8,9 @@
     font-family: Roboto, Arial, sans-serif;
 }
 
-.collapse:not(.show) {
+/*.collapse:not(.show) {
   display: block;
-}
+}*/
 
 .logo{
     width: 80px;
@@ -26,6 +26,17 @@
     padding-bottom: 15px;
 }
 
+#hamburguesa{
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    color: red;
+}
+
+#toggle{
+    display: none;
+}
 
 .menu{
     background-color: #282A35;
@@ -338,7 +349,7 @@ ya que posee los mismos elementos*/
 
 /*Seccion de Index Movil*/
 
-@media (max-width: 576px) {
+/*@media (max-width: 576px) {
     #carousel{
       display: none;
     }
@@ -352,7 +363,7 @@ ya que posee los mismos elementos*/
     .menu ul li{
         display: block;
         /* border: 2px solid black; */
-        margin-bottom: 5px;
+        /*margin-bottom: 5px;
         background-color: red;
     }
 
@@ -364,18 +375,24 @@ ya que posee los mismos elementos*/
         background-color: #282A35;
     }
 
-    .headerPrincipal__desplegable{
-        display: block;
-        border: none;
-        background: none;
+    .headerPrincipal__buscador{
+        display: none;
     }
-
-    .collapse:not(.show) {
+    
+    #hamburguesa{
+        display: block;
+        cursor: pointer;
+    }
+    .menu{
         display: none;
     }
 
+    #toggle:checked + .menu {
+        display: block;
+    }
 
-    /*Anotacion Realizar Dropdown para el menu y acomodar el logo con el buscador para 320px y 600px*/
+
+
 }
-
+*/
 

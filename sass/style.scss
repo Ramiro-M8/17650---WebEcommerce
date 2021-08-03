@@ -183,3 +183,46 @@
 .containerSection{
     margin: 0 auto;
 }
+
+@media (max-width: 576px) {
+    #carousel{
+      display: none;
+    }
+
+    .menu ul{
+        display: block;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .menu ul li{
+        display: block;
+        margin-bottom: 5px;
+        background-color: red;
+    }
+
+    .menu a{
+        display: block;
+    }
+
+    .menu li:hover{
+        background-color: #282A35;
+    }
+
+    .headerPrincipal__buscador{
+        display: none;
+    }
+    
+    #hamburguesa{
+        display: block;
+        cursor: pointer;
+    }
+    .menu{
+        display: none;
+    }
+
+    #toggle:checked + .menu {
+        display: block;
+    }
+
+}

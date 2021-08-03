@@ -177,3 +177,73 @@
   margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */
+
+.menu .menuMobile{
+  display: none;
+}
+
+@media (max-width: 800px) {
+  #carousel{
+    display: none;
+  }
+
+  .headerPrincipal__botonesMenu{
+    display: none;
+  }
+
+  .menu ul{
+      display: block;
+      margin-top: 5px;
+      margin-bottom: 5px;
+  }
+
+  .menu ul li{
+      display: block;
+      margin-bottom: 5px;
+      background-color: red;
+  }
+
+  .menu a{
+      display: block;
+  }
+
+  .menu li:hover{
+      background-color: #282A35;
+  }
+
+  .headerPrincipal__buscador{
+      display: none;
+  }
+  
+  .headerPrincipal{
+    display: block;
+    float: left;
+    width: auto;
+  }
+
+  .containerMenu{
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  #hamburguesa{
+    display: block;
+    cursor: pointer;
+    margin-left: 90%;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+  .menu{
+      display: none;
+  }
+
+  #toggle:checked + .menu{
+      display: block;
+  }
+
+  .menu .menuMobile{
+    display: block;
+  }
+
+}
