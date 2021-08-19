@@ -11,14 +11,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/bd1d03e5d7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/normalize.css">   
-    <link rel="stylesheet" href="css/styleOriginal.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="contenedor">
     <header class="cabecera">
         <!--Logo Principal-->
         <div class="headerPrincipal"> <!--Bloque 1-->
-            <a href="Index.html"><img src="src/img/LOGO.svg" alt="Logo" class="logo"></a>
+            <a href="index.html"><img src="src/img/LOGO.svg" alt="Logo" class="logo"></a>
 
             <!--Buscador para buscar cierto tipo de productos-->
             <div class="headerPrincipal__buscador">
@@ -27,9 +26,6 @@
                     <input type="button" value="Buscar">
                 </form>
             </div>
-            
-            <!--Menu Desplegable, tengo que arreglar la posicion en la que se muestra-->
-            <button class="headerPrincipal__desplegable col-12" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><i class="fas fa-bars fa-2x"></i></button>
 
             <!--Login, Registro y Carrito-->
             <div class="headerPrincipal__botonesMenu">
@@ -43,15 +39,22 @@
         </div>
 
         <!--Menu-->
-        <div class="containerMenu collapse" id="collapseExample">
+        <div class="containerMenu">
+            <label for="toggle" id="hamburguesa">&#9776</label>
+            <input type="checkbox" id="toggle">
             <nav class="menu">
                 
                 <ul>
-                    <li><a href="#">Categorias</a></li> <!--Se va a desplegar las categorias-->
+                    <!--<li><a href="#">Categorias</a></li> -Se va a desplegar las categorias-->
                     <li><a href="ofertasdeldia.html">Ofertas del Dia</a></li>
                     <li><a href="metodosdepago.html">Metodos de Pago</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
                     <li><a href="ayuda.html">Ayuda</a></li>
+                </ul>
+                <ul class="menuMobile">
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Registrarse</a></li> 
+                    <li><a href="#">Carrito</a></li>
                 </ul>
             </nav>
             
