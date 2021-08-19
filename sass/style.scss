@@ -1,4 +1,7 @@
-@import "../sass/base/colores";
+$color-principal: #ebebeb;
+$color-cabecera: #282A35;
+$color-encabezados:#F54748;
+$color-tarjetas:#fff;
 
 .headerPrincipal{
     display: flex;
@@ -94,8 +97,6 @@
     color: $color-tarjetas;
 }
 
-
-/************************/
 .productos{
     background-color: $color-principal;
     margin-bottom: 55px;
@@ -177,11 +178,336 @@
     align-content: center;
     justify-content: center;
     align-items: center;
-    border: 9px solid #ebebeb;
+    border: 9px solid $color-principal;
 }
 
 .containerSection{
     margin: 0 auto;
+}
+
+.contenedor{
+    background-color: $color-principal;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+
+.logo{
+    width: 80px;
+    height: auto;
+    padding: 0;
+}
+
+.cabecera{
+    background-color: $color-cabecera;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    padding-bottom: 15px;
+}
+
+#hamburguesa{
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    color: red;
+}
+
+#toggle{
+    display: none;
+}
+
+.menu{
+    background-color: $color-cabecera;
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menu ul li{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: $color-tarjetas;
+    padding-right: 15px;
+    transition: all 0.5s;
+}
+
+.menu a:hover{
+    text-shadow: 0 0 5px #ebd6da, 0 0 25px #343F56, 0 0 50px #282A35, 0 0 200px #F54748;
+}
+
+#carousel img{
+    
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.footer{
+    background-image: linear-gradient(to bottom, #ebebeb, #F54748); 
+}
+
+.menuFooter{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.menuFooter div{
+    display: inline-table;
+    background-color: $color-encabezados;
+    width: 294px;
+    height: 298px;
+    margin-bottom: 15px;
+    padding: 10px;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-top: 55px;
+}
+
+.menuFooter div h2{
+    color: $color-tarjetas;
+}
+
+.menuFooter div ul{
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.menuFooter div ul li{
+    margin: 3px;
+    text-align: start;
+    padding: 6px;
+}
+
+.menuFooter div ul li a{
+    text-decoration: none;
+    color: $color-tarjetas;
+}
+
+.menu .menuMobile{
+    display: none;
+}
+  
+
+#lineaFooter{
+    border: none;
+    margin-right: 150px;
+    margin-left: 150px;
+}
+
+.logoFooter img{
+    width: 80px;
+    height: auto;
+    padding: 0;
+}
+
+.logoFooter a{ 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.redes ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes li{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes a{
+    color: black;
+    margin-left: 5px;
+    margin-right: 10px;
+
+}
+
+#ayuda{
+    display: grid;
+    grid-template-columns: 75%;
+    justify-content: center;
+}
+
+#ayuda article{
+    display: grid;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+
+.containerBotones{
+    background-color: $color-principal;
+    display: grid;
+    grid-template-columns: 75%;
+    justify-content: center;
+}
+
+
+
+.containerBotones input[type=button]{
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    border: none;
+    background-color: $color-encabezados;
+    color: white;
+    cursor: pointer;
+    font-size: x-large;
+    text-align: left;
+    padding: 10px;
+    transition: all 1s;
+}
+
+.containerBotones button{
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    border: none;
+    background-color: $color-encabezados;
+    color: white;
+    cursor: pointer;
+    font-size: x-large;
+    text-align: left;
+    padding: 10px;
+    transition: all 1s;
+}
+
+.containerBotones button:hover{
+    background-color:$color-principal;
+    color: #000;
+}
+
+.containerBotones button:not(.collapsed){
+    background-color:$color-principal;
+    color: #000;
+}
+
+#containerAyuda{
+    border: 35px solid $color-principal;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    --bs-gutter-x: 0;
+}
+
+.containerInfo H1{
+    text-transform: uppercase;
+}
+
+.containerInfo{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.containerFormulario{
+    background-color: $color-cabecera;
+    color: $color-tarjetas;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    width: 350px;
+}
+
+.containerFormulario form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#formulario{
+    background-color: #beb6b6;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#formulario h2{
+    text-align: center;
+}
+
+#metodosPago{
+    background-color: $color-principal;
+    color: $color-tarjetas;
+}
+
+#metodosPago article h1{
+    text-transform: uppercase;
+}
+
+#metodosPago div{
+    background-color: $color-cabecera;
+    display: inline-block;
+    padding: 35px;
+    border: solid 45px;
+    border-color: $color-principal;
+    margin-bottom: 20px;
+}
+
+#metodosPago div h2{
+    text-align: center;
 }
 
 @media (max-width: 576px) {
@@ -206,7 +532,7 @@
     }
 
     .menu li:hover{
-        background-color: #282A35;
+        background-color: $color-cabecera;
     }
 
     .headerPrincipal__buscador{
@@ -226,3 +552,67 @@
     }
 
 }
+
+@media (max-width: 1291px) {
+ 
+
+    .headerPrincipal__botonesMenu{
+      display: none;
+    }
+  
+    .menu ul{
+        display: block;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+  
+    .menu ul li{
+        display: block;
+        margin-bottom: 5px;
+        background-color: red;
+    }
+  
+    .menu a{
+        display: block;
+    }
+  
+    .menu li:hover{
+        background-color: #282A35;
+    }
+  
+    .headerPrincipal__buscador{
+        display: none;
+    }
+    
+    .headerPrincipal{
+      display: block;
+      float: left;
+      width: auto;
+    }
+  
+    .containerMenu{
+      display: block;
+      margin: 0;
+      padding: 0;
+    }
+  
+    #hamburguesa{
+      display: block;
+      cursor: pointer;
+      margin-left: 90%;
+      margin-top: 5px;
+      margin-bottom: 15px;
+    }
+    .menu{
+        display: none;
+    }
+  
+    #toggle:checked + .menu{
+        display: block;
+    }
+  
+    .menu .menuMobile{
+      display: block;
+    }
+  
+  }
